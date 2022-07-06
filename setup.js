@@ -120,7 +120,7 @@ What is your full name? (used in MIT License)
   )
   .then(() => {
     rl.close();
-    fs.unlink(path.resolve(__filename));
+    // fs.unlink(path.resolve(__filename));
   })
   .catch((error) => {
     console.error(error?.message ?? error ?? 'Unknown error.');
