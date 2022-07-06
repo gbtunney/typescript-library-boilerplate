@@ -28,3 +28,11 @@ pnpmfile.js
 # Log files.
 *.log
 *.log.*
+
+# Scratch files
+scratch
+
+# Build files
+dist
+types
+docs

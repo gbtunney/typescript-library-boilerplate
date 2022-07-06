@@ -1,6 +1,7 @@
 {
-  "name": "[libraryName]",
+  "name": "ts-library-boilerplate",
   "version": "0.0.0",
+  "private": true,
   "description": "",
   "cdn": "dist/index.umd.js",
   "main": "dist/index.js",
@@ -42,9 +43,11 @@
   "scripts": {
     "doc": "typedoc src/index.ts",
     "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "eslint \"*/**/*.{ts,js,json}\"",
     "lint:fix": "eslint \"*/**/*.{ts,js,json}\" --fix",
     "build": "rollup --config ./rollup.config.js",
+    "clean": "rm -R -f dist && rm -R -f types && rm -R -f docs && rm -R -f *.lock",
     "prepublishOnly": "npm run doc && npm run lint && npm run test && npm run build"
   },
   "repository": {
